@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f0f;
+}
+.sm a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 36px;
+  width: 60px;
+  height: 60px;
+  color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 7px;
+}
+.sm a::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
+  z-index: -1;
+  transition: transform .3s ease-in;
+}
+.sm a:nth-child(1)::before{
+  background: #38529a;
+}
+.sm a:nth-child(2)::before{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.sm a:nth-child(3)::before{
+  background: #1c96e9;
+}
+.sm a:nth-child(4)::before{
+  background: #f70000;
+}
+.sm a:nth-child(5)::before{
+  background: #046596;
+}
+.sm a:hover::before{
+  transform: scale(0);
+}
+.sm a i{
+  transition: transform .3s ease-in;
+}
+.sm a:nth-child(1):hover i{
+  background: #38529a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(2):hover i{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(3):hover i{
+  background: #1c96e9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(4):hover i{
+  background: #f70000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(5):hover i{
+  background: #046596;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
